@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu__list {
+    height: 20vh;
+}
+
+#menu__list > li {
+    display: inline-block;
+    list-style-type: none;
+    width: 100px;
+    height: 50px;
+    background: black;
+    color: #fff;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: -3.9px;
+}
+
+#menu__list > li:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,.5);
+    transition: .3s;
+}
+
+#submenu {
+    margin-top: 22px;
+    z-index: 1;
+    display: none;
+}
+
+#submenu > li {
+    display: block;
+
+    text-align: center;
+    padding-top: 10px;
+    width: 100px;
+    height: 50px;
+    background: black;
+    color: #fff;
+    z-index: 1;
+}
+
+#submenu > li:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,.5);
+    transition: .3s;
+}
+
+#textarea {
+    z-index: 0;
+    width: 80%;
+    margin: 0 10% 0;
+    height: 60vh;
+}
+
+#hover1 {
+    z-index: 1;
+}
+
+#hover1:hover > #submenu {
+    display: block;
+}
+
+#menu__list {
+    margin-bottom: 70px;
+    z-index: 1;
+}
