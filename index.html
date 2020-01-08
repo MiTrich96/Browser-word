@@ -5,75 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <script type="text/javascript" src="script.js">
-
-  </script>
-<style>
-  #block__wrap {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    left: 300px;
-    top: 300px;
-  }
-
-  #block {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-    left: 100px;
-    top: 100px;
-  }
-  
-  #left, #right, #top, #bottom {
-    background-color: yellow;
-    color: red;
-    width: 50px;
-    height: 50px;
-    border: 3px solid red;
-  }
-
-  #left:hover, #right:hover, #top:hover, #bottom:hover {
-    cursor: pointer;
-    background-color: red;
-    color: yellow;
-  }
-
-  #left {
-    position: absolute;
-    left: 0;
-    top: 100px;
-  }
-  #right {
-    position: absolute;
-    right: 0;
-    top: 100px;
-  }
-  #top {
-    position: absolute;
-    top: 0;
-    left: 100px;
-  }
-  #bottom {
-    position: absolute;
-    bottom: 0;
-    left: 100px;
-  }
-</style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
-  
-  <div id="block__wrap">
-    <input value="left" type="button" id="left">
-    <input value="top" type="button" id="top">
-    <input value="right" type="button" id="right">
-    <input value="bottom" type="button" id="bottom">
-    <div id="block"></div>
+  <div id="menu__wrap">
+    <ul id="menu__list">
+      <li id="bold">bold</li>
+      <li id="italic">italic</li>
+      <li>24px<ul id="submenu">
+        <li id="size1">12px</li>
+        <li id="size2">24px</li>
+        <li id="size3">36px</li>
+      </ul></li>
+    </ul>
   </div>
-  
 
+  <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+
+  <script type="text/javascript" src="script.js">
+  </script>
 </body>
 </html>
